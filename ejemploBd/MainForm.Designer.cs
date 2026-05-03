@@ -38,6 +38,10 @@ namespace ejemploBd
 		{
 			this.dgvUsuarios = new System.Windows.Forms.DataGridView();
 			this.dataView1 = new System.Data.DataView();
+			this.btnAgregarUsuario = new System.Windows.Forms.Button();
+			this.btnEliminarUsuario = new System.Windows.Forms.Button();
+			this.btnAcualizarUsuario = new System.Windows.Forms.Button();
+			this.lblEstado = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
 			this.SuspendLayout();
@@ -45,17 +49,58 @@ namespace ejemploBd
 			// dgvUsuarios
 			// 
 			this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvUsuarios.Location = new System.Drawing.Point(12, 12);
+			this.dgvUsuarios.Location = new System.Drawing.Point(100, 49);
 			this.dgvUsuarios.Name = "dgvUsuarios";
+			this.dgvUsuarios.ReadOnly = true;
 			this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgvUsuarios.Size = new System.Drawing.Size(658, 274);
+			this.dgvUsuarios.Size = new System.Drawing.Size(501, 189);
 			this.dgvUsuarios.TabIndex = 0;
+			// 
+			// btnAgregarUsuario
+			// 
+			this.btnAgregarUsuario.Location = new System.Drawing.Point(100, 285);
+			this.btnAgregarUsuario.Name = "btnAgregarUsuario";
+			this.btnAgregarUsuario.Size = new System.Drawing.Size(107, 43);
+			this.btnAgregarUsuario.TabIndex = 1;
+			this.btnAgregarUsuario.Text = "Agregar";
+			this.btnAgregarUsuario.UseVisualStyleBackColor = true;
+			this.btnAgregarUsuario.Click += new System.EventHandler(this.BtnAgregarUsuarioClick);
+			// 
+			// btnEliminarUsuario
+			// 
+			this.btnEliminarUsuario.Location = new System.Drawing.Point(256, 285);
+			this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+			this.btnEliminarUsuario.Size = new System.Drawing.Size(107, 43);
+			this.btnEliminarUsuario.TabIndex = 2;
+			this.btnEliminarUsuario.Text = "Eliminar";
+			this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+			// 
+			// btnAcualizarUsuario
+			// 
+			this.btnAcualizarUsuario.Location = new System.Drawing.Point(414, 285);
+			this.btnAcualizarUsuario.Name = "btnAcualizarUsuario";
+			this.btnAcualizarUsuario.Size = new System.Drawing.Size(107, 43);
+			this.btnAcualizarUsuario.TabIndex = 3;
+			this.btnAcualizarUsuario.Text = "Actualizar";
+			this.btnAcualizarUsuario.UseVisualStyleBackColor = true;
+			// 
+			// lblEstado
+			// 
+			this.lblEstado.Location = new System.Drawing.Point(234, 339);
+			this.lblEstado.Name = "lblEstado";
+			this.lblEstado.Size = new System.Drawing.Size(100, 23);
+			this.lblEstado.TabIndex = 4;
+			this.lblEstado.Text = "Estado";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(691, 371);
+			this.Controls.Add(this.lblEstado);
+			this.Controls.Add(this.btnAcualizarUsuario);
+			this.Controls.Add(this.btnEliminarUsuario);
+			this.Controls.Add(this.btnAgregarUsuario);
 			this.Controls.Add(this.dgvUsuarios);
 			this.Name = "MainForm";
 			this.Text = "Ejemplo Conección Base de datos";
@@ -63,6 +108,10 @@ namespace ejemploBd
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Label lblEstado;
+		private System.Windows.Forms.Button btnAcualizarUsuario;
+		private System.Windows.Forms.Button btnEliminarUsuario;
+		private System.Windows.Forms.Button btnAgregarUsuario;
 		private System.Data.DataView dataView1;
 		private System.Windows.Forms.DataGridView dgvUsuarios;
 	}

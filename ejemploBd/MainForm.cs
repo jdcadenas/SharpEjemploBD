@@ -21,6 +21,8 @@ namespace ejemploBd
 	public partial class MainForm : Form
 		
 	{
+		// Paso 1 --> Meter la configuración del servidor BD
+
 		//crea una cadena de conexión
 		private string cadenaConexion =  "Server=localhost;Database=peducativa;Uid=root;Pwd=;";
 		
@@ -42,18 +44,30 @@ namespace ejemploBd
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
 					conexion.Open();
-					string consulta = "SELECT * from usuario";
+					string consulta = "SELECT  id, nombre, email, rol from usuario";
 					
 					MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, conexion);
 					DataTable tabla = new DataTable();
 					adaptador.Fill(tabla);
 					dgvUsuarios.DataSource = tabla;
+					lblEstado.Text = string.Format("Cargados {0} usuarios.", tabla.Rows.Count);
 					
 				}
 			} catch (Exception ex) {
 				
 				MessageBox.Show(string.Format("No se pudo realizar conexion por : {0}",ex.Message));
 			}
+		}
+		
+		void BtnAgregarUsuarioClick(object sender, EventArgs e)
+		{
+			UsuarioNuevo frmnuevo  = new UsuarioNuevo();
+		
+			if (frmnuevo.ShowDialog() == DialogResult.OK) // para mantener estructura
+            {
+				CargarUsuarios();
+				
+            }
 		}
 	}
 }
