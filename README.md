@@ -1,3 +1,19 @@
+## Curso: Algorítmica y Programación – Instituto Universitario Jesús Obrero
+## Herramientas: SharpDevelop 4.4, XAMPP, phpMyAdmin, MySQL Connector/NET 6.9.8
+
+---
+
+## 1. ¿Qué es un CRUD?
+
+CRUD son las cuatro operaciones básicas sobre datos:
+
+- **Create** (Crear / Insertar)
+- **Read** (Leer / Consultar)
+- **Update** (Actualizar / Modificar)
+- **Delete** (Eliminar / Borrar)
+
+Ejemplo:  Puedes agregar un usuario (Create), ver todas (Read), editar  y borrar (Delete).
+
 # EjemploBD con SharpDevelop y Mysql 
 
 ## 1 Script SQL para crear la base de datos y la tabla
@@ -46,21 +62,7 @@ using MySql.Data.MySqlClient;
 using System.Data;
 ```
 
-## Curso: Algorítmica y Programación – Instituto Universitario Jesús Obrero
-## Herramientas: SharpDevelop 4.4, XAMPP, phpMyAdmin, MySQL Connector/NET 6.9.8
 
----
-
-## 1. ¿Qué es un CRUD?
-
-CRUD son las cuatro operaciones básicas sobre datos:
-
-- **Create** (Crear / Insertar)
-- **Read** (Leer / Consultar)
-- **Update** (Actualizar / Modificar)
-- **Delete** (Eliminar / Borrar)
-
-Ejemplo:  Puedes agregar un usuario (Create), ver todas (Read), editar  y borrar (Delete).
 
 ---
 
