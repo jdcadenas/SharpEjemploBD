@@ -119,6 +119,7 @@ namespace ejemploBd
 			this.Controls.Add(this.txtNombre);
 			this.Controls.Add(this.label1);
 			this.Name = "UsuarioNuevo";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Nuevo Usuario";
 			this.ResumeLayout(false);
 			this.PerformLayout();

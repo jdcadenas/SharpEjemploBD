@@ -105,6 +105,7 @@ namespace ejemploBd
 			this.Controls.Add(this.btnAgregarUsuario);
 			this.Controls.Add(this.dgvUsuarios);
 			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Ejemplo Conección Base de datos";
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
