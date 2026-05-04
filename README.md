@@ -1,5 +1,5 @@
 ## Curso: Algorítmica y Programación – Instituto Universitario Jesús Obrero
-## Herramientas: SharpDevelop 4.4, XAMPP, phpMyAdmin, MySQL Connector/NET 6.9.8
+## Herramientas: SharpDevelop 4.4, XAMPP, phpMyAdmin, MySQL Connector/NET 
 
 ---
 
