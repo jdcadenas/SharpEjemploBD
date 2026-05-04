@@ -61,7 +61,8 @@ namespace ejemploBd
 					
 					cmd.Parameters.AddWithValue("@nombre", txtNombre.Text.Trim());
 					cmd.Parameters.AddWithValue("@clave", txtClave.Text);
-					cmd.Parameters.AddWithValue("@rol", cmbRol.SelectedItem.ToString());
+					int idrol = (int)cmbRol.SelectedIndex;
+					cmd.Parameters.AddWithValue("@rol", idrol);
 					conexion.Open();
 					cmd.ExecuteNonQuery();
 				}

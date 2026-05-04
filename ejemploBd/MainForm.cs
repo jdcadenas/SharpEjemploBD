@@ -44,7 +44,7 @@ namespace ejemploBd
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
 					conexion.Open();
-					string consulta = "SELECT  id, nombre, email, rol from usuario";
+					string consulta = "SELECT  id, nombre, clave, rol from usuario";
 					
 					MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, conexion);
 					DataTable tabla = new DataTable();
