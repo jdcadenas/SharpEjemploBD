@@ -19,7 +19,7 @@ namespace ejemploBd
 	/// </summary>
 	public partial class UsuarioNuevo : Form
 	{
-		//crea una cadena de conexión
+		//paso 1.- crea una cadena de conexión
 		private string cadenaConexion =  "Server=localhost;Database=peducativa;Uid=root;Pwd=;";
 		
 		
@@ -30,9 +30,6 @@ namespace ejemploBd
 			//
 			InitializeComponent();
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
 		}
 		
 		void BtnGuardarClick(object sender, EventArgs e)
@@ -52,17 +49,20 @@ namespace ejemploBd
 				MessageBox.Show("Seleccione un rol.");
 				return;
 			}
+			//paso 2.- Crea la consulta
 			string consulta = "INSERT INTO usuario (nombre, clave, rol) VALUES (@nombre, @clave,@rol)";
 			try
 			{
+				//paso 3.- crea la conexion y ejecuta la consulta
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
 					using (MySqlCommand cmd = new MySqlCommand(consulta, conexion))
 				{
-					
+					//paso 4.- relaciona los parametros con el comando
 					cmd.Parameters.AddWithValue("@nombre", txtNombre.Text.Trim());
 					cmd.Parameters.AddWithValue("@clave", txtClave.Text);
 					int idrol = (int)cmbRol.SelectedIndex;
 					cmd.Parameters.AddWithValue("@rol", idrol);
+					//paso 5.- abre y ejecuta la consulta
 					conexion.Open();
 					cmd.ExecuteNonQuery();
 				}

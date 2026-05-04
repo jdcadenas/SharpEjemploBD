@@ -21,9 +21,7 @@ namespace ejemploBd
 	public partial class MainForm : Form
 		
 	{
-		// Paso 1 --> Meter la configuración del servidor BD
-
-		//crea una cadena de conexión
+		// Paso 1 --> crea una cadena de conexión
 		private string cadenaConexion =  "Server=localhost;Database=peducativa;Uid=root;Pwd=;";
 		
 			
@@ -34,21 +32,25 @@ namespace ejemploBd
 			//
 			InitializeComponent();
 			CargarUsuarios();
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+			
 		}
 		
 		public void CargarUsuarios(){
 		
 			try {
+				// paso 2 -  > establece la conexión
+
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
-					conexion.Open();
+					//paso 3 crea la consulta
 					string consulta = "SELECT  id, nombre, clave, rol from usuario";
-					
+					//paso 4 Abre la conexión
+					conexion.Open();
+					//paso 5 utiliza adaptador para ejecutar la consulta
 					MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, conexion);
+					//paso 5 define objeto tabla y con el uso de adaptador la llenas
 					DataTable tabla = new DataTable();
 					adaptador.Fill(tabla);
+					//paso 6 establece la fuente de datos del dgvUsuarios
 					dgvUsuarios.DataSource = tabla;
 					lblEstado.Text = string.Format("Cargados {0} usuarios.", tabla.Rows.Count);
 					
