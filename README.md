@@ -103,7 +103,7 @@ Agrega los siguientes controles desde la `Toolbox`:
 [Inicio]
    │
    ▼
-[CargarTareas()] ────→ [Mostrar DataGridView]
+[CargarUsuarios()] ────→ [Mostrar DataGridView]
    │
    ▼
 [Esperar acción del usuario]
@@ -135,7 +135,7 @@ Agrega los siguientes controles desde la `Toolbox`:
 *“Arrastren los controles como ven en la tabla. Nombren cada uno exactamente como está escrito.”*
 
 ### 7.4. Escribir el código – Cargar tareas (10 min)
-*“El método `CargarTareas` se conecta, hace un `SELECT` y llena el DataGridView.”*
+*“El método `CargarUsuario` se conecta, hace un `SELECT` y llena el DataGridView.”*
 
 ### 7.5. Seleccionar fila (5 min)
 *“El evento `SelectionChanged` captura la fila que el usuario hace clic. Guardamos el `id` y mostramos la descripción y el estado en los controles.”*
