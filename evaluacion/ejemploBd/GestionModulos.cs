@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -49,6 +49,11 @@ namespace ejemploBd
 			// Abrir el formulario de preguntas pasando los parámetros
 			GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
 			frm.ShowDialog();
+		}
+		
+		void BtnGuardarClick(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

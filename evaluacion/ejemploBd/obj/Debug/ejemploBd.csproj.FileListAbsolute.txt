@@ -7,3 +7,8 @@ C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\ejemploBd\bin\Debug\MyS
 C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\ejemploBd\obj\Debug\ejemploBd.MainForm.resources
 C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\ejemploBd\obj\Debug\ejemploBd.csproj.GenerateResource.Cache
 C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\ejemploBd\obj\Debug\ejemploBd.UsuarioNuevo.resources
+C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\evaluacion\ejemploBd\obj\Debug\ejemploBd.csprojResolveAssemblyReference.cache
+C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\evaluacion\ejemploBd\obj\Debug\ejemploBd.MainForm.resources
+C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\evaluacion\ejemploBd\obj\Debug\ejemploBd.UsuarioNuevo.resources
+C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\evaluacion\ejemploBd\obj\Debug\ejemploBd.csproj.GenerateResource.Cache
+C:\Users\jdcad\Documents\SharpDevelop Projects\ejemploBd\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
