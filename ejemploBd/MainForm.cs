@@ -133,5 +133,12 @@ namespace ejemploBd
 				}
 			}
 		}
+		
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+				GestionModulos frm = new GestionModulos();
+			frm.ShowDialog();
+		}
 	}
 }

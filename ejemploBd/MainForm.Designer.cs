@@ -42,6 +42,7 @@ namespace ejemploBd
 			this.btnEliminarUsuario = new System.Windows.Forms.Button();
 			this.btnActualizarUsuario = new System.Windows.Forms.Button();
 			this.lblEstado = new System.Windows.Forms.Label();
+			this.btnModulo = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
 			this.SuspendLayout();
@@ -88,17 +89,28 @@ namespace ejemploBd
 			// 
 			// lblEstado
 			// 
-			this.lblEstado.Location = new System.Drawing.Point(234, 339);
+			this.lblEstado.Location = new System.Drawing.Point(256, 339);
 			this.lblEstado.Name = "lblEstado";
 			this.lblEstado.Size = new System.Drawing.Size(100, 23);
 			this.lblEstado.TabIndex = 4;
 			this.lblEstado.Text = "Estado";
+			// 
+			// btnModulo
+			// 
+			this.btnModulo.Location = new System.Drawing.Point(550, 285);
+			this.btnModulo.Name = "btnModulo";
+			this.btnModulo.Size = new System.Drawing.Size(103, 43);
+			this.btnModulo.TabIndex = 5;
+			this.btnModulo.Text = "Modulo";
+			this.btnModulo.UseVisualStyleBackColor = true;
+			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(691, 371);
+			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblEstado);
 			this.Controls.Add(this.btnActualizarUsuario);
 			this.Controls.Add(this.btnEliminarUsuario);
@@ -111,6 +123,7 @@ namespace ejemploBd
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblEstado;
 		private System.Windows.Forms.Button btnActualizarUsuario;
 		private System.Windows.Forms.Button btnEliminarUsuario;
