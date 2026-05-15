@@ -26,6 +26,7 @@
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.BtnVerPreguntas = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvModulos)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -78,9 +79,20 @@
 			this.label2.TabIndex = 0;
 			this.label2.Text = "Name (EN):";
 			// 
+			// BtnVerPreguntas
+			// 
+			this.BtnVerPreguntas.Location = new System.Drawing.Point(201, 240);
+			this.BtnVerPreguntas.Name = "BtnVerPreguntas";
+			this.BtnVerPreguntas.Size = new System.Drawing.Size(75, 23);
+			this.BtnVerPreguntas.TabIndex = 4;
+			this.BtnVerPreguntas.Text = "preguntas";
+			this.BtnVerPreguntas.UseVisualStyleBackColor = true;
+			this.BtnVerPreguntas.Click += new System.EventHandler(this.BtnVerPreguntasClick);
+			// 
 			// GestionModulos
 			// 
 			this.ClientSize = new System.Drawing.Size(384, 281);
+			this.Controls.Add(this.BtnVerPreguntas);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnGuardar);
@@ -93,5 +105,6 @@
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button BtnVerPreguntas;
 	}
 }

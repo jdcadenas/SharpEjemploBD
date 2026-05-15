@@ -45,11 +45,12 @@ namespace ejemploBd
 
 			// EXAMEN PASO 4: Obtener el ID y Nombre del módulo seleccionado para enviarlo al hijo
 			int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells["id"].Value);
-			string nombreMod = dgvModulos.SelectedRows[0].Cells["________"].Value.ToString();
+			string nombreMod = dgvModulos.SelectedRows[0].Cells["id"].Value.ToString();
 
 			// Abrir el formulario de preguntas pasando los parámetros
 			GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
 			frm.ShowDialog();
+			
 		}
 		
 		void BtnGuardarClick(object sender, EventArgs e)

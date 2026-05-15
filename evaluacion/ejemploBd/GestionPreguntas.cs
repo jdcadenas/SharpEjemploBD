@@ -17,7 +17,7 @@ namespace ejemploBd
 		{
 			InitializeComponent();
 			// El estudiante debe añadir los parámetros y asignar los valores aquí
-			
+			CargarPreguntas();
 			//
 			//lamar a funcion 
 		}
