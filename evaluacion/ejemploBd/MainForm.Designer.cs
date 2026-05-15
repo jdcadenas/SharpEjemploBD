@@ -87,14 +87,6 @@ namespace ejemploBd
 			this.btnActualizarUsuario.UseVisualStyleBackColor = true;
 			this.btnActualizarUsuario.Click += new System.EventHandler(this.BtnAcualizarUsuarioClick);
 			// 
-			// lblEstado
-			// 
-			this.lblEstado.Location = new System.Drawing.Point(234, 339);
-			this.lblEstado.Name = "lblEstado";
-			this.lblEstado.Size = new System.Drawing.Size(100, 23);
-			this.lblEstado.TabIndex = 4;
-			this.lblEstado.Text = "Estado";
-			// 
 			// btnGestionModulos
 			// 
 			this.btnGestionModulos.Location = new System.Drawing.Point(544, 285);
@@ -105,11 +97,19 @@ namespace ejemploBd
 			this.btnGestionModulos.UseVisualStyleBackColor = true;
 			this.btnGestionModulos.Click += new System.EventHandler(this.BtnGestionModulosClick);
 			// 
+			// lblEstado
+			// 
+			this.lblEstado.Location = new System.Drawing.Point(234, 339);
+			this.lblEstado.Name = "lblEstado";
+			this.lblEstado.Size = new System.Drawing.Size(100, 23);
+			this.lblEstado.TabIndex = 4;
+			this.lblEstado.Text = "Estado";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(691, 371);
+			this.ClientSize = new System.Drawing.Size(710, 383);
 			this.Controls.Add(this.btnGestionModulos);
 			this.Controls.Add(this.lblEstado);
 			this.Controls.Add(this.btnActualizarUsuario);

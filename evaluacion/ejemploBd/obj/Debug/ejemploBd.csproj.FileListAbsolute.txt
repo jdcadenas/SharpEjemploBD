@@ -7,3 +7,4 @@ C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\bin\Debug\ejem
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.GestionModulos.resources
