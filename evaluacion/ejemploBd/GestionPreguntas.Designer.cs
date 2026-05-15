@@ -23,15 +23,16 @@ namespace ejemploBd
 			this.dgvPreguntas.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dgvPreguntas.Location = new System.Drawing.Point(0, 0);
 			this.dgvPreguntas.Name = "dgvPreguntas";
-			this.dgvPreguntas.Size = new System.Drawing.Size(484, 261);
+			this.dgvPreguntas.Size = new System.Drawing.Size(576, 359);
 			this.dgvPreguntas.TabIndex = 0;
 			// 
 			// GestionPreguntas
 			// 
-			this.ClientSize = new System.Drawing.Size(484, 261);
+			this.ClientSize = new System.Drawing.Size(576, 359);
 			this.Controls.Add(this.dgvPreguntas);
 			this.Name = "GestionPreguntas";
 			this.Text = "Preguntas";
+		
 			((System.ComponentModel.ISupportInitialize)(this.dgvPreguntas)).EndInit();
 			this.ResumeLayout(false);
 		}

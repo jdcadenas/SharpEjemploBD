@@ -30,7 +30,7 @@ namespace ejemploBd
 					
 					// EXAMEN PASO 3: Falta la instrucción para llenar la tabla (Fill)
 					
-					adaptador.Fill.(tabla);
+					adaptador.Fill(tabla);
 					dgvModulos.DataSource = tabla;
 				}
 			} catch (Exception ex) {
@@ -44,9 +44,9 @@ namespace ejemploBd
 
 			// EXAMEN PASO 4: Obtener el ID y Nombre del módulo seleccionado para enviarlo al hijo
 			int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells["id"].Value);
-			string nombreMod = dgvModulos.SelectedRows[0].Cells["1;2"].Value.ToString();
+			string nombreMod = dgvModulos.SelectedRows[0].Cells["nombre_es"].Value.ToString();
 			
-			GestionPreguntas ventana = new GestionPreguntas(idModulo);
+			GestionPreguntas ventana = new GestionPreguntas(idModulo,nombreMod);
             ventana.ShowDialog();
 		}
 		
@@ -56,7 +56,7 @@ namespace ejemploBd
     {
         string query = "INSERT INTO modulo (nombre_es, nombre_en) VALUES ('" + txtNombreEs.Text + "', '" + txtNombreEn.Text + "')";
 
-        using (MySqlConnection conn = new MySqlConnection(cadena))
+        using (MySqlConnection conn = new MySqlConnection(cadenaConexion))
         {
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(query, conn);
