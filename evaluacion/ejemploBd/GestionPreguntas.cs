@@ -17,7 +17,7 @@ namespace ejemploBd
 		{
 			InitializeComponent();
 			// El estudiante debe añadir los parámetros y asignar los valores aquí
-			this._idModulo = idModulo
+			this._idModulo = idModulo;
 			//
 			//lamar a funcion
 			CargarPreguntas();
@@ -26,7 +26,8 @@ namespace ejemploBd
 		private void CargarPreguntas()
 		{
 			try {
-				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
+				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) 
+				{
 					// EXAMEN PASO 6: Filtrar las preguntas por el ID del módulo recibido (_idModulo)
 					string sql = "SELECT * FROM pregunta WHERE id_modulo = " + _idModulo;
 					
@@ -36,7 +37,8 @@ namespace ejemploBd
 					adp.Fill(dt);
 					dgvPreguntas.DataSource = dt;
 				}
-			} catch (Exception ex) {
+			} 
+			catch (Exception ex) {
 				MessageBox.Show("Error: " + ex.Message);
 			}
 		}
