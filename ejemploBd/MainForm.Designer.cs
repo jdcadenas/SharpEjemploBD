@@ -42,6 +42,7 @@ namespace ejemploBd
 			this.btnEliminarUsuario = new System.Windows.Forms.Button();
 			this.btnActualizarUsuario = new System.Windows.Forms.Button();
 			this.lblEstado = new System.Windows.Forms.Label();
+			this.btnModulos = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
 			this.SuspendLayout();
@@ -58,7 +59,7 @@ namespace ejemploBd
 			// 
 			// btnAgregarUsuario
 			// 
-			this.btnAgregarUsuario.Location = new System.Drawing.Point(100, 285);
+			this.btnAgregarUsuario.Location = new System.Drawing.Point(109, 261);
 			this.btnAgregarUsuario.Name = "btnAgregarUsuario";
 			this.btnAgregarUsuario.Size = new System.Drawing.Size(107, 43);
 			this.btnAgregarUsuario.TabIndex = 1;
@@ -68,7 +69,7 @@ namespace ejemploBd
 			// 
 			// btnEliminarUsuario
 			// 
-			this.btnEliminarUsuario.Location = new System.Drawing.Point(256, 285);
+			this.btnEliminarUsuario.Location = new System.Drawing.Point(246, 261);
 			this.btnEliminarUsuario.Name = "btnEliminarUsuario";
 			this.btnEliminarUsuario.Size = new System.Drawing.Size(107, 43);
 			this.btnEliminarUsuario.TabIndex = 2;
@@ -78,7 +79,7 @@ namespace ejemploBd
 			// 
 			// btnActualizarUsuario
 			// 
-			this.btnActualizarUsuario.Location = new System.Drawing.Point(414, 285);
+			this.btnActualizarUsuario.Location = new System.Drawing.Point(374, 261);
 			this.btnActualizarUsuario.Name = "btnActualizarUsuario";
 			this.btnActualizarUsuario.Size = new System.Drawing.Size(107, 43);
 			this.btnActualizarUsuario.TabIndex = 3;
@@ -88,17 +89,29 @@ namespace ejemploBd
 			// 
 			// lblEstado
 			// 
-			this.lblEstado.Location = new System.Drawing.Point(234, 339);
+			this.lblEstado.Location = new System.Drawing.Point(220, 326);
 			this.lblEstado.Name = "lblEstado";
 			this.lblEstado.Size = new System.Drawing.Size(100, 23);
 			this.lblEstado.TabIndex = 4;
 			this.lblEstado.Text = "Estado";
+			// 
+			// btnModulos
+			// 
+			this.btnModulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnModulos.Location = new System.Drawing.Point(516, 260);
+			this.btnModulos.Name = "btnModulos";
+			this.btnModulos.Size = new System.Drawing.Size(120, 44);
+			this.btnModulos.TabIndex = 5;
+			this.btnModulos.Text = "Modulos";
+			this.btnModulos.UseVisualStyleBackColor = true;
+			this.btnModulos.Click += new System.EventHandler(this.BtnModulosClick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(691, 371);
+			this.Controls.Add(this.btnModulos);
 			this.Controls.Add(this.lblEstado);
 			this.Controls.Add(this.btnActualizarUsuario);
 			this.Controls.Add(this.btnEliminarUsuario);
@@ -111,6 +124,7 @@ namespace ejemploBd
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnModulos;
 		private System.Windows.Forms.Label lblEstado;
 		private System.Windows.Forms.Button btnActualizarUsuario;
 		private System.Windows.Forms.Button btnEliminarUsuario;
