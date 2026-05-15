@@ -86,6 +86,7 @@
 			this.btnVerPreguntas.TabIndex = 4;
 			this.btnVerPreguntas.Text = "Ver Preguntas";
 			this.btnVerPreguntas.UseVisualStyleBackColor = true;
+			this.btnVerPreguntas.Click += new System.EventHandler(this.BtnVerPreguntasClick);
 			// 
 			// GestionModulos
 			// 
