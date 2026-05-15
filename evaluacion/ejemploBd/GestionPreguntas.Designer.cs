@@ -25,6 +25,7 @@ namespace ejemploBd
 			this.dgvPreguntas.Name = "dgvPreguntas";
 			this.dgvPreguntas.Size = new System.Drawing.Size(484, 261);
 			this.dgvPreguntas.TabIndex = 0;
+			this.dgvPreguntas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPreguntasCellContentClick);
 			// 
 			// GestionPreguntas
 			// 

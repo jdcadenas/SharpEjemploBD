@@ -8,36 +8,43 @@ namespace ejemploBd
 {
 	public partial class GestionPreguntas : Form
 	{
-		// EXAMEN PASO 5.1: Esta cadena debe estar vacía. Cópiala de MainForm.cs
-		private string cadenaConexion = ""; 
-		private int _idModulo;
+		
+		private string cadenaConexion = "Server=localhost;Database=peducativa;Uid=root;Pwd=;"; 
+		private int idModuloInterno;
+		 
 
-		// EXAMEN PASO 5.2: El constructor debe recibir el ID y el Nombre del módulo
-		public GestionPreguntas( _______ _____ ,____ _____ )
+		public GestionPreguntas(int _idModulo,string nombreMod)
 		{
 			InitializeComponent();
-			// El estudiante debe añadir los parámetros y asignar los valores aquí
-			
-			//
-			//lamar a funcion 
+		
 		}
 
 		private void CargarPreguntas()
 		{
 			try {
-				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
-					// EXAMEN PASO 6: Filtrar las preguntas por el ID del módulo recibido (_idModulo)
-					string sql = "SELECT * FROM pregunta WHERE id_modulo = " + _idModulo;
-					
-					conexion.Open();
-					MySqlDataAdapter adp = new MySqlDataAdapter(sql, conexion);
-					DataTable dt = new DataTable();
-					adp.Fill(dt);
-					dgvPreguntas.DataSource = dt;
-				}
-			} catch (Exception ex) {
-				MessageBox.Show("Error: " + ex.Message);
-			}
+                using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
+                    
+                   
+                    string sql = "SELECT * FROM pregunta WHERE id_modulo = @id";
+                    
+                    conexion.Open();
+                    
+                    
+                    MySqlCommand comando = new MySqlCommand(sql, conexion);
+                    comando.Parameters.AddWithValue("@id", this.idModuloInterno);
+                    
+                   
+                    MySqlDataAdapter adp = new MySqlDataAdapter(comando);
+                    DataTable dt = new DataTable();
+                    adp.Fill(dt);
+                    
+                    
+                    dgvPreguntas.DataSource = dt;
+                }
+            } catch (Exception ex) {
+                MessageBox.Show("Error al cargar las preguntas: " + ex.Message);
+            }
 		}
+		
 	}
 }
