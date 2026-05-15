@@ -54,14 +54,6 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionModulos.cs" />
-    <Compile Include="GestionModulos.Designer.cs">
-      <DependentUpon>GestionModulos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionPreguntas.cs" />
-    <Compile Include="GestionPreguntas.Designer.cs">
-      <DependentUpon>GestionPreguntas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioNuevo.cs" />
