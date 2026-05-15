@@ -26,21 +26,25 @@ namespace ejemploBd
 		}
 
 		private void CargarPreguntas()
-		{
-			try {
-				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
-					// EXAMEN PASO 6: Filtrar las preguntas por el ID del módulo recibido (_idModulo)
-					string sql = "SELECT * FROM pregunta WHERE id_modulo = _idModulo" + _idModulo;
-					
-					conexion.Open();
-					MySqlDataAdapter adp = new MySqlDataAdapter(sql, conexion);
-					DataTable dt = new DataTable();
-					adp.Fill(dt);
-					dgvPreguntas.DataSource = dt;
-				}
-			} catch (Exception ex) {
-				MessageBox.Show("Error: " + ex.Message);
-			}
-		}
+{
+    try {
+        using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
+  
+            string sql = "SELECT * FROM pregunta WHERE id_modulo = @idModulo";
+            
+            conexion.Open();
+            
+            MySqlCommand cmd = new MySqlCommand(sql, conexion);
+            cmd.Parameters.AddWithValue("@idModulo", this._idModulo);
+            
+            MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dgvPreguntas.DataSource = dt;
+        }
+    } catch (Exception ex) {
+        MessageBox.Show("Error: " + ex.Message);
+    }
+}
 	}
 }

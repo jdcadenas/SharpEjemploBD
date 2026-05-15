@@ -38,17 +38,32 @@ namespace ejemploBd
 		}
 
 		void BtnVerPreguntasClick(object sender, EventArgs e)
-		{
-			if (dgvModulos.SelectedRows.Count == 0) return;
+{
+    if (dgvModulos.CurrentRow == null)
+    {
+        MessageBox.Show("Por favor, seleccione un módulo de la lista.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        return;
+    }
 
-			// EXAMEN PASO 4: Obtener el ID y Nombre del módulo seleccionado para enviarlo al hijo
-			int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells["id"].Value);
-			string nombreMod = dgvModulos.SelectedRows[0].Cells["nombre_es"].Value.ToString();
+    try
+    {
+      
+        int idModulo = Convert.ToInt32(dgvModulos.CurrentRow.Cells["id"].Value);
+        string nombreMod = dgvModulos.CurrentRow.Cells["nombre_es"].Value.ToString();
 
-			// Abrir el formulario de preguntas pasando los parámetros
-			GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
-			frm.ShowDialog();
-		}
+        GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
+        
+        frm.ShowDialog();
+    }
+    catch (NullReferenceException)
+    {
+        MessageBox.Show("La fila seleccionada no contiene datos válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("Ocurrió un error al intentar abrir las preguntas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+}
 		
 		void BtnGuardarClick(object sender, EventArgs e)
 		{
