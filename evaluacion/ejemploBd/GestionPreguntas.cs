@@ -19,7 +19,7 @@ namespace ejemploBd
 			InitializeComponent();
 			this._idModulo = idModulo;
 			this._NombreModulo = modulonombre;
-			// El estudiante debe añadir los parámetros y asignar los valores aqui
+			// El estudiante debe añadir los parámetros y asignar los valores aqu
 			
 			
 			CargarPreguntas();
