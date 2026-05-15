@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Gabriel Corobo
+* **Nombre 2:** Fabian Torrelles
 
 ---
 
@@ -33,11 +33,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Debido a la instrucción "ON DELETE CASCADE" en la llave foránea, todas las filas de la tabla pregunta que estén vinculadas al id del módulo eliminado se borrarán automáticamente 
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:* Porque para establecer un vínculo de integridad referencial ambos campos deben ser binariamente compatibles a nivel de almacenamiento, ya que si los tipos difieren la base de datos no puede realizar la comparación física de los valores para validar la relación 
 
 
 
@@ -62,11 +62,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Revisaria la Conexión por que como el fallo es general, osea afecta a todos los modulos es más probable que el problema esté en el puente principal de datos ya que una Consulta SQL erronea suele fallar solo en un punto en especifico, no en todo el sistema
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
+* *R:* Garantiza la integridad y la inmutabilidad porque al ser private y asignarse en el Constructor se asegura que el ID no sea modificado por error externo luego de ser creado ya que esto evita que el objeto pierda su identidad unica durante la ejecución
 
 
 
