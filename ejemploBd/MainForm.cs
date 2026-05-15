@@ -1,17 +1,10 @@
-﻿/*
- * Created by SharpDevelop.
- * User: jdcad
- * Date: 3/5/2026
- * Time: 2:53 p. m.
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Data;
+
 namespace ejemploBd
 {
 	/// <summary>
@@ -132,6 +125,14 @@ namespace ejemploBd
 					CargarUsuarios();
 				}
 			}
+		}
+		
+		void BtnModulosClick(object sender, EventArgs e)
+		{
+			
+			GestionModulos modulos = new GestionModulos();
+			modulos.ShowDialog();
+			
 		}
 	}
 }

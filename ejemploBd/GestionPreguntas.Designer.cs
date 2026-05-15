@@ -36,12 +36,30 @@ namespace ejemploBd
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.dgvPreguntas = new System.Windows.Forms.DataGridView();
+			((System.ComponentModel.ISupportInitialize)(this.dgvPreguntas)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// dgvPreguntas
+			// 
+			this.dgvPreguntas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvPreguntas.Location = new System.Drawing.Point(31, 25);
+			this.dgvPreguntas.Name = "dgvPreguntas";
+			this.dgvPreguntas.Size = new System.Drawing.Size(404, 229);
+			this.dgvPreguntas.TabIndex = 0;
 			// 
 			// GestionPreguntas
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "GestionPreguntas";
+			this.ClientSize = new System.Drawing.Size(466, 356);
+			this.Controls.Add(this.dgvPreguntas);
 			this.Name = "GestionPreguntas";
+			this.Text = "GestionPreguntas";
+			this.Load += new System.EventHandler(this.GestionPreguntas_Load);
+			((System.ComponentModel.ISupportInitialize)(this.dgvPreguntas)).EndInit();
+			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.DataGridView dgvPreguntas;
 	}
 }
