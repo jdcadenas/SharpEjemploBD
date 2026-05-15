@@ -62,11 +62,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Revisaria la Conexión por que como el fallo es general, osea afecta a todos los modulos es más probable que el problema esté en el puente principal de datos ya que una Consulta SQL erronea suele fallar solo en un punto en especifico, no en todo el sistema
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
+* *R:* Garantiza la integridad y la inmutabilidad porque al ser private y asignarse en el Constructor se asegura que el ID no sea modificado por error externo luego de ser creado ya que esto evita que el objeto pierda su identidad unica durante la ejecución
 
 
 
