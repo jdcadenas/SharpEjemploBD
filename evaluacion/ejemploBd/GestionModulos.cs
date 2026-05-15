@@ -21,14 +21,14 @@ namespace ejemploBd
 		{
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
-					// EXAMEN PASO 2: Consulta bilingüe incompleta
+					// EXAMEN PASO 2: Consulta bilingüe incompleta (Seleccione id, nombre_es y nombre_en)
 					string consulta = "SELECT id, ________, ________ FROM modulo";
 					
 					conexion.Open();
 					MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, conexion);
 					DataTable tabla = new DataTable();
 					
-					// EXAMEN PASO 3: Falta la instrucción para llenar la tabla
+					// EXAMEN PASO 3: Falta la instrucción para llenar la tabla (Fill)
 					// ___________________________; 
 					
 					dgvModulos.DataSource = tabla;

@@ -8,23 +8,22 @@ namespace ejemploBd
 {
 	public partial class GestionPreguntas : Form
 	{
-		private string cadenaConexion = "Server=localhost;Database=peducativa;Uid=root;Pwd=;";
+		// EXAMEN PASO 5.1: Esta cadena debe estar vacía. Cópiala de MainForm.cs
+		private string cadenaConexion = ""; 
 		private int _idModulo;
 
-		// EXAMEN PASO 5: El constructor debe recibir los datos del formulario padre
-		public GestionPreguntas(int id, string nombre)
+		// EXAMEN PASO 5.2: El constructor debe recibir el ID y el Nombre del módulo
+		public GestionPreguntas()
 		{
 			InitializeComponent();
-			this._idModulo = id;
-			this.Text = "Preguntas de: " + nombre;
-			CargarPreguntas();
+			// El estudiante debe añadir los parámetros y asignar los valores aquí
 		}
 
 		private void CargarPreguntas()
 		{
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
-					// EXAMEN PASO 6: Filtrar las preguntas por el ID del módulo recibido
+					// EXAMEN PASO 6: Filtrar las preguntas por el ID del módulo recibido (_idModulo)
 					string sql = "SELECT * FROM pregunta WHERE id_modulo = " + ________;
 					
 					conexion.Open();
