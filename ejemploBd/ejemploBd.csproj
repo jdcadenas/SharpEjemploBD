@@ -54,6 +54,10 @@
     <Compile Include="GestionModulos.Designer.cs">
       <DependentUpon>GestionModulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPreguntas.cs" />
+    <Compile Include="GestionPreguntas.Designer.cs">
+      <DependentUpon>GestionPreguntas.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="GestionModulos.resx">
       <DependentUpon>GestionModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPreguntas.resx">
+      <DependentUpon>GestionPreguntas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

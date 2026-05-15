@@ -59,6 +59,7 @@ namespace ejemploBd
 			this.btnVerPregunta.TabIndex = 2;
 			this.btnVerPregunta.Text = "Ver pregunta";
 			this.btnVerPregunta.UseVisualStyleBackColor = true;
+			this.btnVerPregunta.Click += new System.EventHandler(this.BtnVerPreguntaClick);
 			// 
 			// GestionModulos
 			// 

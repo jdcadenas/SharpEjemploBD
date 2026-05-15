@@ -88,5 +88,11 @@ namespace ejemploBd
 			GestionModulos frm = new GestionModulos();
 			frm.ShowDialog();
 		}
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+			GestionModulos frm = new GestionModulos();
+			frm.ShowDialog();			
+		}
 	}
 }
