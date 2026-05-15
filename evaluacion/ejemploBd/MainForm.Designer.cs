@@ -69,7 +69,7 @@ namespace ejemploBd
 			// 
 			// btnEliminarUsuario
 			// 
-			this.btnEliminarUsuario.Location = new System.Drawing.Point(256, 285);
+			this.btnEliminarUsuario.Location = new System.Drawing.Point(213, 285);
 			this.btnEliminarUsuario.Name = "btnEliminarUsuario";
 			this.btnEliminarUsuario.Size = new System.Drawing.Size(107, 43);
 			this.btnEliminarUsuario.TabIndex = 2;
@@ -79,13 +79,23 @@ namespace ejemploBd
 			// 
 			// btnActualizarUsuario
 			// 
-			this.btnActualizarUsuario.Location = new System.Drawing.Point(414, 285);
+			this.btnActualizarUsuario.Location = new System.Drawing.Point(326, 285);
 			this.btnActualizarUsuario.Name = "btnActualizarUsuario";
 			this.btnActualizarUsuario.Size = new System.Drawing.Size(107, 43);
 			this.btnActualizarUsuario.TabIndex = 3;
 			this.btnActualizarUsuario.Text = "Actualizar";
 			this.btnActualizarUsuario.UseVisualStyleBackColor = true;
 			this.btnActualizarUsuario.Click += new System.EventHandler(this.BtnAcualizarUsuarioClick);
+			// 
+			// btnGestionModulos
+			// 
+			this.btnGestionModulos.Location = new System.Drawing.Point(439, 285);
+			this.btnGestionModulos.Name = "btnGestionModulos";
+			this.btnGestionModulos.Size = new System.Drawing.Size(120, 43);
+			this.btnGestionModulos.TabIndex = 5;
+			this.btnGestionModulos.Text = "Módulos (Proyecto)";
+			this.btnGestionModulos.UseVisualStyleBackColor = true;
+			this.btnGestionModulos.Click += new System.EventHandler(this.BtnGestionModulosClick);
 			// 
 			// lblEstado
 			// 
@@ -94,16 +104,6 @@ namespace ejemploBd
 			this.lblEstado.Size = new System.Drawing.Size(100, 23);
 			this.lblEstado.TabIndex = 4;
 			this.lblEstado.Text = "Estado";
-			// 
-			// btnGestionModulos
-			// 
-			this.btnGestionModulos.Location = new System.Drawing.Point(544, 285);
-			this.btnGestionModulos.Name = "btnGestionModulos";
-			this.btnGestionModulos.Size = new System.Drawing.Size(120, 43);
-			this.btnGestionModulos.TabIndex = 5;
-			this.btnGestionModulos.Text = "Módulos (Proyecto)";
-			this.btnGestionModulos.UseVisualStyleBackColor = true;
-			this.btnGestionModulos.Click += new System.EventHandler(this.BtnGestionModulosClick);
 			// 
 			// MainForm
 			// 
