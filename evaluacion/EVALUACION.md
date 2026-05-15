@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Fabian Ortiz
+* **Nombre 2:** Sabrina Hernandez
 
 ---
 
@@ -33,11 +33,12 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Si eliminas un moddulo de la tabla modulo,    todas las preguntas asociadas a ese módulo en particular se eliminaran de forma automatica en la tabla pregunta
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:* Es obligatorio porque el motor de la base de datos necesita realizar una comparación exacta a nivel binario entre la clave foránea (id_modulo) y la clave primaria (id)
+
 
 
 
@@ -62,11 +63,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Si el problema fuera la Conexion, el programa arrojaría un error de código o una excepción de tiempo de ejecución (como Connection Timeout, Database Not Found o Access Denied) al intentar comunicarse con el servidor.
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
+* *R:* Al recibir el ID a través del Constructor y almacenarlo en una variable private, garantizas que ese identificador sea obligatorio para crear el objeto y que no pueda ser alterado maliciosa o accidentalmente desde el exterior durante el ciclo de vida del objeto.
 
 
 
