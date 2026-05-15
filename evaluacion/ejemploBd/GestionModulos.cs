@@ -45,15 +45,36 @@ namespace ejemploBd
 			// EXAMEN PASO 4: Obtener el ID y Nombre del módulo seleccionado para enviarlo al hijo
 			int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells["id"].Value);
 			string nombreMod = dgvModulos.SelectedRows[0].Cells["1;2"].Value.ToString();
-
-			// Abrir el formulario de preguntas pasando los parámetros
-			GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
-			frm.ShowDialog();
+			
+			GestionPreguntas ventana = new GestionPreguntas(idModulo);
+            ventana.ShowDialog();
 		}
 		
 		void BtnGuardarClick(object sender, EventArgs e)
 		{
-			
+    try
+    {
+        string query = "INSERT INTO modulo (nombre_es, nombre_en) VALUES ('" + txtNombreEs.Text + "', '" + txtNombreEn.Text + "')";
+
+        using (MySqlConnection conn = new MySqlConnection(cadena))
+        {
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.ExecuteNonQuery(); 
+            
+            MessageBox.Show("Módulo guardado");
+
+            
+            txtNombreEs.Clear();
+            txtNombreEn.Clear();
+            CargarModulos(); 
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("Error al guardar: " + ex.Message);
+    }
 		}
 	}
 }
+
