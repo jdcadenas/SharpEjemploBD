@@ -29,7 +29,7 @@ namespace ejemploBd
 					DataTable tabla = new DataTable();
 					
 					// EXAMEN PASO 3: Falta la instrucción para llenar la tabla (Fill)
-					// ___________________________; 
+					adaptador.Fill(tabla);
 					
 					dgvModulos.DataSource = tabla;
 				}
