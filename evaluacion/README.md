@@ -131,3 +131,6 @@ SELECT * FROM pregunta WHERE id_modulo = @id;
 3.  **Reparación de Módulos:** Complete la conexión y la consulta `SELECT` en `GestionModulos.cs`.
 4.  **Reparación de Preguntas:** Implemente el paso del ID y el filtrado SQL en `GestionPreguntas.cs`.
 5.  **Prueba Final:** Al seleccionar "Cálculo" en la lista de módulos, deben aparecer solo sus preguntas.
+
+
+![alt text](image.png)

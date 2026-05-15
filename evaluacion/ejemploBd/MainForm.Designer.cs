@@ -41,6 +41,7 @@ namespace ejemploBd
 			this.btnAgregarUsuario = new System.Windows.Forms.Button();
 			this.btnEliminarUsuario = new System.Windows.Forms.Button();
 			this.btnActualizarUsuario = new System.Windows.Forms.Button();
+			this.btnGestionModulos = new System.Windows.Forms.Button();
 			this.lblEstado = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();

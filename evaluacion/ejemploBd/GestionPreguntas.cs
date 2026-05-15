@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -13,10 +13,13 @@ namespace ejemploBd
 		private int _idModulo;
 
 		// EXAMEN PASO 5.2: El constructor debe recibir el ID y el Nombre del módulo
-		public GestionPreguntas()
+		public GestionPreguntas( _______ _____ ,____ _____ )
 		{
 			InitializeComponent();
 			// El estudiante debe añadir los parámetros y asignar los valores aquí
+			
+			//
+			//lamar a funcion 
 		}
 
 		private void CargarPreguntas()
@@ -24,7 +27,7 @@ namespace ejemploBd
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
 					// EXAMEN PASO 6: Filtrar las preguntas por el ID del módulo recibido (_idModulo)
-					string sql = "SELECT * FROM pregunta WHERE id_modulo = " + ________;
+					string sql = "SELECT * FROM pregunta WHERE id_modulo = " + _idModulo;
 					
 					conexion.Open();
 					MySqlDataAdapter adp = new MySqlDataAdapter(sql, conexion);
