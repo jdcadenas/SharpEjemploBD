@@ -43,22 +43,26 @@ namespace ejemploBd
 			// dgvPreguntas
 			// 
 			this.dgvPreguntas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvPreguntas.Location = new System.Drawing.Point(40, 57);
+			this.dgvPreguntas.Location = new System.Drawing.Point(121, 60);
+			this.dgvPreguntas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.dgvPreguntas.Name = "dgvPreguntas";
-			this.dgvPreguntas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
-			this.dgvPreguntas.Size = new System.Drawing.Size(240, 150);
+			this.dgvPreguntas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dgvPreguntas.Size = new System.Drawing.Size(668, 233);
 			this.dgvPreguntas.TabIndex = 0;
 			// 
 			// GestionPreguntas
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(374, 366);
+			this.ClientSize = new System.Drawing.Size(921, 457);
 			this.Controls.Add(this.dgvPreguntas);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "GestionPreguntas";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GestionPreguntas";
 			((System.ComponentModel.ISupportInitialize)(this.dgvPreguntas)).EndInit();
 			this.ResumeLayout(false);
+
 		}
 		private System.Windows.Forms.DataGridView dgvPreguntas;
 	}

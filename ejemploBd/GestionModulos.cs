@@ -42,13 +42,11 @@ namespace ejemploBd
 		{
 			if (dgvModulos.SelectedRows.Count == 0) return;
 
-    // Cambiamos ["id"] por [0] y ["nombre_es"] por [1]
-    int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells[0].Value);
-    string nombreMod = dgvModulos.SelectedRows[0].Cells[1].Value.ToString();
-
-    // Abrir el formulario de preguntas pasando los parámetros
-    GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
-    frm.ShowDialog();
+		    int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells["id"].Value);
+		    string nombreMod = dgvModulos.SelectedRows[0].Cells["nombre_es"].Value.ToString();
+		
+		    GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
+		    frm.ShowDialog();
 		}
     }
 }

@@ -44,18 +44,20 @@ namespace ejemploBd
 			// dgvModulos
 			// 
 			this.dgvModulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvModulos.Location = new System.Drawing.Point(137, 68);
+			this.dgvModulos.Location = new System.Drawing.Point(140, 64);
+			this.dgvModulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.dgvModulos.Name = "dgvModulos";
 			this.dgvModulos.ReadOnly = true;
 			this.dgvModulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgvModulos.Size = new System.Drawing.Size(501, 189);
+			this.dgvModulos.Size = new System.Drawing.Size(668, 233);
 			this.dgvModulos.TabIndex = 1;
 			// 
 			// btnVerPregunta
 			// 
-			this.btnVerPregunta.Location = new System.Drawing.Point(303, 365);
+			this.btnVerPregunta.Location = new System.Drawing.Point(356, 346);
+			this.btnVerPregunta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.btnVerPregunta.Name = "btnVerPregunta";
-			this.btnVerPregunta.Size = new System.Drawing.Size(194, 50);
+			this.btnVerPregunta.Size = new System.Drawing.Size(259, 62);
 			this.btnVerPregunta.TabIndex = 2;
 			this.btnVerPregunta.Text = "Ver pregunta";
 			this.btnVerPregunta.UseVisualStyleBackColor = true;
@@ -63,15 +65,18 @@ namespace ejemploBd
 			// 
 			// GestionModulos
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(788, 499);
+			this.ClientSize = new System.Drawing.Size(921, 457);
 			this.Controls.Add(this.btnVerPregunta);
 			this.Controls.Add(this.dgvModulos);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "GestionModulos";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GestionModulos";
 			((System.ComponentModel.ISupportInitialize)(this.dgvModulos)).EndInit();
 			this.ResumeLayout(false);
+
 		}
 		private System.Windows.Forms.Button btnVerPregunta;
 		private System.Windows.Forms.DataGridView dgvModulos;

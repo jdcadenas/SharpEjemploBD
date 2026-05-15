@@ -37,12 +37,7 @@ namespace ejemploBd
                         MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
                         adp.Fill(dt);
-
-                        // Asignar el resultado al DataGridView (asumiendo que se llama dgvPreguntas)
-                        if (dt.Rows.Count > 0)
-                        {
-                            // dgvPreguntas.DataSource = dt; 
-                        }
+                        dgvPreguntas.DataSource = dt; 
                     }
                 }
             } 
