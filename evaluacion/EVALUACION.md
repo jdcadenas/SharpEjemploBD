@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Fabián Ortiz
+* **Nombre 2:** Sabrina Hernández
 
 ---
 
