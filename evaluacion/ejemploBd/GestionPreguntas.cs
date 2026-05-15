@@ -17,9 +17,10 @@ namespace ejemploBd
 		{
 			InitializeComponent();
 			// El estudiante debe añadir los parámetros y asignar los valores aquí
-			
+			this._idModulo = idModulo;
 			//
-			//lamar a funcion 
+			//lamar a funcion
+			CargarPreguntas();
 		}
 
 		private void CargarPreguntas()

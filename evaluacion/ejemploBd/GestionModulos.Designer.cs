@@ -36,6 +36,7 @@
 			this.dgvModulos.Name = "dgvModulos";
 			this.dgvModulos.Size = new System.Drawing.Size(533, 234);
 			this.dgvModulos.TabIndex = 0;
+			this.dgvModulos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvModulosCellClick);
 			// 
 			// txtNombreEs
 			// 

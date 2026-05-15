@@ -84,5 +84,14 @@ namespace ejemploBd
 				CargarModulos();
 			}
 		}
+		
+		void DgvModulosCellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			int idModulo = Convert.ToInt32(dgvModulos.Rows[e.RowIndex].Cells["id"].Value);
+			string nombreModulo = dgvModulos.Rows[e.RowIndex].Cells["nombre_es"].Value.ToString();
+			
+			GestionPreguntas ventanaPregunta =  new GestionPreguntas(idModulo, nombreModulo);
+			ventanaPregunta.ShowDialog();
+		}
 	}
 }
