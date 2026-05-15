@@ -8,7 +8,7 @@ namespace ejemploBd
 {
 	public partial class GestionModulos : Form
 	{
-		// EXAMEN PASO 1: Esta cadena está vacía. Cópiala de MainForm.cs
+		// EXAMEN PASO 1: Esta cadena está vacía. Cópiala de MainForm.cs....
 		private string cadenaConexion = "Server=localhost;Database=peducativa;Uid=root;Pwd=;"; 
 
 		public GestionModulos()
@@ -21,7 +21,7 @@ namespace ejemploBd
 		{
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
-					// EXAMEN PASO 2: Consulta bilingüe incompleta (Seleccione id, nombre_es y nombre_en)
+					// EXAMEN PASO 2: Consulta bilingüe incompleta (Seleccione id, nombre_es y nombre_en)))))
 					string consulta = "SELECT id, nombre_es, nombre_en FROM modulo";
 					
 					conexion.Open();
@@ -57,7 +57,7 @@ namespace ejemploBd
     }
     catch (NullReferenceException)
     {
-        MessageBox.Show("La fila seleccionada no contiene datos válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        MessageBox.Show("La fila seleccionada no contiene datos válidos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
     catch (Exception ex)
     {
