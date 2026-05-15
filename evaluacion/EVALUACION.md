@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Gabriel Corobo
+* **Nombre 2:** Fabian Torrelles
 
 ---
 
@@ -33,11 +33,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Debido a la instrucción "ON DELETE CASCADE" en la llave foránea, todas las filas de la tabla pregunta que estén vinculadas al id del módulo eliminado se borrarán automáticamente 
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:* Porque para establecer un vínculo de integridad referencial ambos campos deben ser binariamente compatibles a nivel de almacenamiento, ya que si los tipos difieren la base de datos no puede realizar la comparación física de los valores para validar la relación 
 
 
 
