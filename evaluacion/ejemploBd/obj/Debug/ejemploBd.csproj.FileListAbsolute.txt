@@ -7,7 +7,6 @@ C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\bin\Debug\ejem
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
-<<<<<<< HEAD
 C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.exe
 C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.pdb
 C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
@@ -17,6 +16,5 @@ C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploB
 C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csproj.GenerateResource.Cache
 C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
 C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
-=======
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.GestionModulos.resources
->>>>>>> 1c550489bf7d0693f46625ac2625ff69940754d2
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.GestionModulos.resources

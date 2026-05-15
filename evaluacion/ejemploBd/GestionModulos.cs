@@ -56,11 +56,32 @@ namespace ejemploBd
 			string nombre_es = txtNombreEs.Text;
 			string nombre_en = txtNombreEn.Text;
 			
-			string sqlInsert = "INSERT INTO modulo (nombre_es, nombre_en) VALUES (@name_es, @name_)";
+			if(string.IsNullOrWhiteSpace(nombre_es) || string.IsNullOrWhiteSpace(nombre_en))
+			{
+				MessageBox.Show("Todos los campos deben estar rellenos", "Error");
+				return;
+			}
+			
+			string sqlInsert = "INSERT INTO modulo (nombre_es, nombre_en) VALUES (@name_es, @name_en)";
 			
 			using (MySqlConnection con = new MySqlConnection(cadenaConexion))
 			{
+				con.Open();
 				
+				MySqlCommand cmd = new MySqlCommand(sqlInsert, con);
+				
+				cmd.Parameters.AddWithValue("@name_es", nombre_es);
+				cmd.Parameters.AddWithValue("@name_en", nombre_en);
+				
+				cmd.ExecuteNonQuery();
+				MessageBox.Show("Modulo agregado con exito", "Exito");
+				
+				//limpiar campos
+				txtNombreEn.Clear();
+				txtNombreEs.Clear();
+				
+				//actualizar DataGridView
+				CargarModulos();
 			}
 		}
 	}
