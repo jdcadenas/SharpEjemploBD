@@ -9,17 +9,39 @@ namespace ejemploBd
 	public partial class GestionPreguntas : Form
 	{
 		// EXAMEN PASO 5.1: Esta cadena debe estar vacía. Cópiala de MainForm.cs
-		private string cadenaConexion = ""; 
-		private int _idModulo;
-
-		// EXAMEN PASO 5.2: El constructor debe recibir el ID y el Nombre del módulo
-		public GestionPreguntas( _______ _____ ,____ _____ )
+private string cadenaConexion =  "Server=localhost;Database=peducativa;Uid=root;Pwd=;";
+		private int id = -1;
+		
+		public MainForm()
 		{
-			InitializeComponent();
-			// El estudiante debe añadir los parámetros y asignar los valores aquí
-			
 			//
-			//lamar a funcion 
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			InitializeComponent();
+			CargarUsuarios();
+			
+		}
+		
+		public void CargarUsuarios()
+		{
+			
+			try {
+		
+		// EXAMEN PASO 5.2: El constructor debe recibir el ID y el Nombre del módulo
+			using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
+				{
+				
+					string consulta = "SELECT  id, nombre, clave, rol from usuario";
+					
+					conexion.Open();
+		
+					MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, conexion);
+					DataTable tabla = new DataTable(); 
+					adaptador.Fill(tabla);
+				
+					dgvUsuarios.DataSource = tabla;
+					lblEstado.Text = string.Format("Cargados {0} usuarios.", tabla.Rows.Count);
+					
 		}
 
 		private void CargarPreguntas()
