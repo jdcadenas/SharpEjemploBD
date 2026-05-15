@@ -42,13 +42,13 @@ namespace ejemploBd
 		{
 			if (dgvModulos.SelectedRows.Count == 0) return;
 
-			// EXAMEN PASO 4: Obtener el ID y Nombre del módulo seleccionado para enviarlo al hijo
-			int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells["id"].Value);
-			string nombreMod = dgvModulos.SelectedRows[0].Cells["________"].Value.ToString();
+    // Cambiamos ["id"] por [0] y ["nombre_es"] por [1]
+    int idModulo = Convert.ToInt32(dgvModulos.SelectedRows[0].Cells[0].Value);
+    string nombreMod = dgvModulos.SelectedRows[0].Cells[1].Value.ToString();
 
-			// Abrir el formulario de preguntas pasando los parámetros
-			GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
-			frm.ShowDialog();
+    // Abrir el formulario de preguntas pasando los parámetros
+    GestionPreguntas frm = new GestionPreguntas(idModulo, nombreMod);
+    frm.ShowDialog();
 		}
     }
 }
