@@ -56,5 +56,10 @@ namespace ejemploBd
 		{
 			
 		}
+		
+		void  BtnVerPreguntas(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }

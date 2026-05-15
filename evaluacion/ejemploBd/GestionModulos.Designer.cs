@@ -1,4 +1,4 @@
-namespace ejemploBd
+﻿namespace ejemploBd
 {
 	partial class GestionModulos
 	{
@@ -26,6 +26,7 @@ namespace ejemploBd
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvModulos)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -36,6 +37,7 @@ namespace ejemploBd
 			this.dgvModulos.Name = "dgvModulos";
 			this.dgvModulos.Size = new System.Drawing.Size(360, 150);
 			this.dgvModulos.TabIndex = 0;
+			this.dgvModulos.Click += new System.EventHandler(this.BtnVerPreguntasClick);
 			// 
 			// txtNombreEs
 			// 
@@ -63,19 +65,33 @@ namespace ejemploBd
 			// 
 			// label1
 			// 
-			this.label1.Text = "Nombre (ES):";
 			this.label1.Location = new System.Drawing.Point(12, 183);
+			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(92, 23);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Nombre (ES):";
 			// 
 			// label2
 			// 
-			this.label2.Text = "Name (EN):";
 			this.label2.Location = new System.Drawing.Point(12, 213);
+			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(92, 23);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Name (EN):";
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(198, 240);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 4;
+			this.button1.Text = "Cargar preguntas";
+			this.button1.UseVisualStyleBackColor = true;
 			// 
 			// GestionModulos
 			// 
 			this.ClientSize = new System.Drawing.Size(384, 281);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnGuardar);
@@ -88,5 +104,6 @@ namespace ejemploBd
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button button1;
 	}
 }

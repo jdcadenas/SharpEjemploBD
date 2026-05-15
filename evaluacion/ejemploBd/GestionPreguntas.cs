@@ -25,6 +25,7 @@ namespace ejemploBd
 			this._idModulo = idRecibido;
 			//
 			//lamar a funcion 
+			CargarPreguntas();
 		}
 
 		private void CargarPreguntas()
