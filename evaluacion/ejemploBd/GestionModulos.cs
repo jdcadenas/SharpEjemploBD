@@ -53,7 +53,15 @@ namespace ejemploBd
 		
 		void BtnGuardarClick(object sender, EventArgs e)
 		{
+			string nombre_es = txtNombreEs.Text;
+			string nombre_en = txtNombreEn.Text;
 			
+			string sqlInsert = "INSERT INTO modulo (nombre_es, nombre_en) VALUES (@name_es, @name_)";
+			
+			using (MySqlConnection con = new MySqlConnection(cadenaConexion))
+			{
+				
+			}
 		}
 	}
 }

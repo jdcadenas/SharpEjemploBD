@@ -7,3 +7,12 @@ C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\bin\Debug\ejem
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
 C:\Users\usuario\Desktop\peeducativa\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.MainForm.resources
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.UsuarioNuevo.resources
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csproj.GenerateResource.Cache
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\SharpDB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
