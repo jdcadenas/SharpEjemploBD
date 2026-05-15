@@ -79,8 +79,8 @@ namespace ejemploBd
 			// 
 			this.cmbRol.FormattingEnabled = true;
 			this.cmbRol.Items.AddRange(new object[] {
-									"Jugador",
-									"Administrador"});
+									"(0)Jugador",
+									"(1)Administrador"});
 			this.cmbRol.Location = new System.Drawing.Point(36, 175);
 			this.cmbRol.Name = "cmbRol";
 			this.cmbRol.Size = new System.Drawing.Size(153, 21);
