@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Laura Gimenez
+* **Nombre 2:** Andrea Arismendi
 
 ---
 
@@ -33,11 +33,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Debido a la instrucción ON DELETE CASCADE, al eliminar un módulo, el motor de la base de datos eliminará automáticamente todas las filas de la tabla pregunta que tengan el id_modulo correspondiente. Esto evita que queden "registros huérfanos" (preguntas que no pertenecen a ningún módulo existente).
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:* Es obligatorio porque ambos campos representan el mismo dominio de datos para establecer el vínculo físico en la memoria del disco. Si los tipos fueran distintos (ej. uno INT y otro VARCHAR), el motor de la base de datos no podría realizar la comparación binaria necesaria para validar la integridad referencial y la relación fallaría.
 
 
 
@@ -62,12 +62,13 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Revisaría primero la consulta SQL.
+​
+Justificación: Si el problema fuera la Conexion, el programa lanzaría una excepción (error) tipo MySqlException al intentar abrirla. Si la ventana abre sin errores pero vacía, significa que la conexión fue exitosa, pero el SELECT con la cláusula WHERE id_modulo = @id probablemente no está encontrando coincidencias (quizás el ID pasado es incorrecto o no hay datos cargados para ese módulo específico).
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
-
+* *R:* La ventaja principal es la protección de la integridad de los datos (Inmutabilidad). Al ser private y asignarse en el constructor, garantizamos que el ID del módulo no sea modificado por otros formularios o procesos externos durante el ciclo de vida de la ventana de preguntas, asegurando que el filtro de datos sea siempre el correcto y evitando comportamientos impredecibles
 
 
 ---
