@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Created by SharpDevelop.
  * User: jdcad
  * Date: 3/5/2026
@@ -30,7 +30,7 @@ namespace ejemploBd
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
 				{
-					string consulta = "SELECT id, nombre, clave, rol from usuario";
+					string consulta = "SELECT id, nombre, clave, rol FROM usuario";
 					conexion.Open();
 					MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, conexion);
 					DataTable tabla = new DataTable();
