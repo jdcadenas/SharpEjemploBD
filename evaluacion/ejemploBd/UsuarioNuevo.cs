@@ -1,9 +1,4 @@
-/*
- * Created by SharpDevelop.
- * User: jdcad
- * Date: 3/5/2026
- * Time: 6:41 p. m.
- */
+﻿
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -14,7 +9,6 @@ namespace ejemploBd
 {
 	public partial class UsuarioNuevo : Form
 	{
-		// ESTA PARTE FUNCIONA: Úsala como guía para completar el resto del sistema
 		private string cadenaConexion =  "Server=localhost;Database=peducativa;Uid=root;Pwd=;";
 		private bool _esEdicion = false;
 		private int _id = -1;
@@ -60,7 +54,7 @@ namespace ejemploBd
 					if (_esEdicion) cmd.Parameters.AddWithValue("@id", _id);
 					
 					conexion.Open();
-					cmd.ExecuteNonQuery(); // ESTA LÍNEA ES CLAVE: Ejecuta la acción en la BD
+					cmd.ExecuteNonQuery(); 
 				}
 				this.DialogResult = DialogResult.OK;
 				this.Close();

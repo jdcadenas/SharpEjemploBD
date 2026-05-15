@@ -1,9 +1,4 @@
-/*
- * Created by SharpDevelop.
- * User: jdcad
- * Date: 3/5/2026
- * Time: 2:53 p. m.
- */
+﻿
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -15,7 +10,6 @@ namespace ejemploBd
 {
 	public partial class MainForm : Form
 	{
-		// ESTA PARTE FUNCIONA: Úsala como guía para completar el resto del sistema
 		private string cadenaConexion =  "Server=localhost;Database=peducativa;Uid=root;Pwd=;";
 		private int id = -1;
 		
@@ -89,7 +83,6 @@ namespace ejemploBd
 
 		void BtnGestionModulosClick(object sender, EventArgs e)
 		{
-			// EXAMEN: Abrir el formulario de Gestión de Módulos
 			GestionModulos frm = new GestionModulos();
 			frm.ShowDialog();
 		}
