@@ -17,7 +17,7 @@ namespace ejemploBd
         {
             //
             // The InitializeComponent() call is required for Windows Forms designer support.
-            //
+            // //
             InitializeComponent();
             this._idModulo = idModulo;
             this.Text = "Preguntas de: " + nombreModulo;
