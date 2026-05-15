@@ -1,0 +1,20 @@
+# --- SharpDevelop & Visual Studio ---
+bin/
+obj/
+*.exe
+## *.dll
+*.pdb
+*.suo
+*.user
+*.cache
+*.db
+*.opendb
+
+# --- Archivos de Base de Datos locales ---
+# (Para que no suban sus pruebas locales de archivos .sql si no quieres)
+*.bak
+*.log
+
+# --- Archivos de Sistema ---
+.DS_Store
+Thumbs.db
