@@ -37,7 +37,7 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* Para que la llave foranea pueda apuntar a la llave primaria. sison diferente larelacion no funciona.
+* *R:* Para que la llave foranea pueda apuntar a la llave primaria. Si son diferente la relacion no funciona.
 
 
 
@@ -62,7 +62,7 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* La consulta SQl, porque si la conexion faltaria la conexion daria error. si no hay error pero no salen datos,elWHERe esta mal o no recibe el id.
+* *R:* La consulta SQl, porque si la conexion faltaria daria error. si no hay error pero no salen datos, el WHERE esta mal o no recibe el id.
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
