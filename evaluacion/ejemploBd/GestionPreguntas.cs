@@ -29,7 +29,7 @@ namespace ejemploBd
 			try {
 				using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) {
 					// EXAMEN PASO 6: Filtrar las preguntas por el ID del módulo recibido (_idModulo)
-					string sql = "SELECT * FROM pregunta WHERE id_modulo = _idModulo " + _idModulo;
+					string sql = "SELECT * FROM pregunta WHERE id_modulo = @_idModulo " + _idModulo;
 					
 					conexion.Open();
 					MySqlDataAdapter adp = new MySqlDataAdapter(sql, conexion);
