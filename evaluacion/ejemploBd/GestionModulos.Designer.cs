@@ -1,4 +1,4 @@
-namespace ejemploBd
+﻿namespace ejemploBd
 {
 	partial class GestionModulos
 	{
@@ -36,6 +36,7 @@ namespace ejemploBd
 			this.dgvModulos.Name = "dgvModulos";
 			this.dgvModulos.Size = new System.Drawing.Size(360, 150);
 			this.dgvModulos.TabIndex = 0;
+			this.dgvModulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvModulosCellContentClick);
 			// 
 			// txtNombreEs
 			// 
@@ -63,15 +64,19 @@ namespace ejemploBd
 			// 
 			// label1
 			// 
-			this.label1.Text = "Nombre (ES):";
 			this.label1.Location = new System.Drawing.Point(12, 183);
+			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(92, 23);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Nombre (ES):";
 			// 
 			// label2
 			// 
-			this.label2.Text = "Name (EN):";
 			this.label2.Location = new System.Drawing.Point(12, 213);
+			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(92, 23);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Name (EN):";
 			// 
 			// GestionModulos
 			// 

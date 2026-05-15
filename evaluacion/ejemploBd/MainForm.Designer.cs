@@ -41,6 +41,7 @@ namespace ejemploBd
 			this.btnAgregarUsuario = new System.Windows.Forms.Button();
 			this.btnEliminarUsuario = new System.Windows.Forms.Button();
 			this.btnActualizarUsuario = new System.Windows.Forms.Button();
+			this.btnGestionModulos = new System.Windows.Forms.Button();
 			this.lblEstado = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
@@ -55,6 +56,7 @@ namespace ejemploBd
 			this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvUsuarios.Size = new System.Drawing.Size(501, 189);
 			this.dgvUsuarios.TabIndex = 0;
+			this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvUsuariosCellContentClick);
 			// 
 			// btnAgregarUsuario
 			// 
@@ -86,6 +88,16 @@ namespace ejemploBd
 			this.btnActualizarUsuario.UseVisualStyleBackColor = true;
 			this.btnActualizarUsuario.Click += new System.EventHandler(this.BtnAcualizarUsuarioClick);
 			// 
+			// btnGestionModulos
+			// 
+			this.btnGestionModulos.Location = new System.Drawing.Point(544, 285);
+			this.btnGestionModulos.Name = "btnGestionModulos";
+			this.btnGestionModulos.Size = new System.Drawing.Size(120, 43);
+			this.btnGestionModulos.TabIndex = 5;
+			this.btnGestionModulos.Text = "Módulos (Proyecto)";
+			this.btnGestionModulos.UseVisualStyleBackColor = true;
+			this.btnGestionModulos.Click += new System.EventHandler(this.BtnGestionModulosClick);
+			// 
 			// lblEstado
 			// 
 			this.lblEstado.Location = new System.Drawing.Point(234, 339);
@@ -99,6 +111,7 @@ namespace ejemploBd
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(691, 371);
+			this.Controls.Add(this.btnGestionModulos);
 			this.Controls.Add(this.lblEstado);
 			this.Controls.Add(this.btnActualizarUsuario);
 			this.Controls.Add(this.btnEliminarUsuario);
@@ -115,6 +128,7 @@ namespace ejemploBd
 		private System.Windows.Forms.Button btnActualizarUsuario;
 		private System.Windows.Forms.Button btnEliminarUsuario;
 		private System.Windows.Forms.Button btnAgregarUsuario;
+		private System.Windows.Forms.Button btnGestionModulos;
 		private System.Data.DataView dataView1;
 		private System.Windows.Forms.DataGridView dgvUsuarios;
 	}

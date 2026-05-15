@@ -1,0 +1,29 @@
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.MainForm.resources
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.UsuarioNuevo.resources
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csproj.GenerateResource.Cache
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\trabajo seccion BG\peurba\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.MainForm.resources
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.UsuarioNuevo.resources
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csproj.GenerateResource.Cache
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\bin\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\bin\Debug\MySql.Data.dll
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.MainForm.resources
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.UsuarioNuevo.resources
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.csproj.GenerateResource.Cache
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.exe
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.pdb
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.GestionPreguntas.resources
+C:\Users\usuario\Desktop\TrabajoB\SharpBD\evaluacion\ejemploBd\obj\Debug\ejemploBd.GestionModulos.resources
