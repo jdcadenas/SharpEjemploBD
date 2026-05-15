@@ -9,7 +9,7 @@ namespace ejemploBd
 	public partial class GestionModulos : Form
 	{
 		// EXAMEN PASO 1: Esta cadena está vacía. Cópiala de MainForm.cs
-		private string cadenaConexion = ""; 
+		private string cadenaConexion = "Server=localhost;Database=peducativa;Uid=root;Pwd=;"; 
 
 		public GestionModulos()
 		{
@@ -28,7 +28,6 @@ namespace ejemploBd
 					MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, conexion);
 					DataTable tabla = new DataTable();
 					
-					// EXAMEN PASO 3: Falta la instrucción para llenar la tabla (Fill)
 					adaptador.Fill(tabla);
 					
 					dgvModulos.DataSource = tabla;
@@ -55,5 +54,6 @@ namespace ejemploBd
 		{
 			
 		}
+		
 	}
 }

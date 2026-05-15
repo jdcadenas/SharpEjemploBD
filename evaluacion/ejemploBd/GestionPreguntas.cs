@@ -17,9 +17,10 @@ namespace ejemploBd
 		public GestionPreguntas(int idModulo, string modulonombre)
 		{
 			InitializeComponent();
-			// El estudiante debe añadir los parámetros y asignar los valores aqui
 			this._idModulo = idModulo;
 			this._NombreModulo = modulonombre;
+			// El estudiante debe añadir los parámetros y asignar los valores aqui
+			
 			
 			CargarPreguntas();
 		}
