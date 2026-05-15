@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Jonas Escalona_________________________
+* **Nombre 2:** _______________________________________
 
 ---
 
@@ -33,11 +33,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Al eliminar un módulo todas las preguntas vinculadas a ese id_modulo se eliminarán automáticamente de la tabla pregunta
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:* Porque las llaves foráneas deben ser exactamente del mismo tipo y longitud que la llave primaria a la que apuntan para que el motor de la base de datos pueda compararlas y crear el enlace físico en el índice de búsqueda
 
 
 
@@ -49,6 +49,14 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 2. **Consulta SQL:** Complete el `SELECT` en `CargarModulos` para mostrar `id`, `nombre_es` y `nombre_en`.
 3. **Carga:** Programe la línea que usa el `adaptador` para llenar el `DataTable` y mostrar los datos en la grilla.
 
+string query = "SELECT id, nombre_es, nombre_en FROM modulo";
+
+MySqlDataAdapter adapter = new MySqlDataAdapter(query, conexion);
+DataTable dt = new DataTable();
+
+adapter.Fill(dt);
+dataGridViewModulos.DataSource = dt;
+
 ---
 
 ### FASE 3: Paso de Parámetros (El Reto)
@@ -57,16 +65,21 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 2. **El Constructor:** En `GestionPreguntas.cs`, complete el constructor para que reciba ese `id` y lo asigne a la variable interna de la clase.
 3. **El Filtro:** En la consulta SQL de la ventana de preguntas, use el `id` recibido (cláusula `WHERE`) para que **solo** se muestren las preguntas del módulo seleccionado.
 
+int id = Convert.ToInt32(dataGridViewModulos.CurrentRow.Cells["id"].Value);
+GestionPreguntas ventana = new GestionPreguntas(id);
+ventana.Show();
+
+
 ---
 
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Revisaría primero la consulta SQL. Si la Conexion tuviera un error (como una contraseña incorrecta) el programa lanzaría una excepción y se cerraría
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
+* *R:* La ventaja es la seguridad y protección de datos. Al ser private y recibirse por el constructor, garantizamos que el ID sea "de solo lectura" para el resto del programa evitando que un error en otro formulario cambie el valor y termine mostrando preguntas de un módulo que no corresponde
 
 
 
