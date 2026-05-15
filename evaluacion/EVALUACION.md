@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Rafael Valera 31367441
+* **Nombre 2:** Daime Almao 31926468
 
 ---
 
@@ -33,11 +33,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Las preguntas asociadas al modulo se borraran automaticamente, sin esta instruccion, no te dejaria borrar este modulo si tiene preguntas registradas.
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:* Tienen que ser compatibles, no pueden ser diferentes ya que el sistema no podrá realizar la comparación necesaria para validar la relación, lo que resultará en un error
 
 
 
@@ -62,11 +62,13 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Revisaría primero la consulta SQL
+Justificacion: Si hubiera un error en la conexión la aplicacion devolveria un mensaje de error avisando dicho error con la conexion, pero al no mostrar nada significa que la conexion funciona pero la consulta al mysql no esta devolviendo las filas
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
+* *R:* La ventaja seria protejer los datos.
+Justificacion: Al usar el constructor y la variable en private garantiza la seguridad del ID, ya que el constructor le asigna los parametros al momento de crear el objeto, y si fuera una variable publica (public) cualquier parte del programa podria modificarlo, haciendo que se pueda modificar o eliminar accidentalmente.
 
 
 
@@ -86,5 +88,6 @@ Para finalizar la evaluación, el **Estudiante A** (el dueño del Fork) debe rea
 > 
 
 **⚠️ IMPORTANTE:** No intente subir las carpetas `bin` ni `obj`. El archivo `.gitignore` ya está configurado para mantener el repositorio limpio.
+
 
 ---
