@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Sthephany Cordero
+* **Nombre 2:** Luis Torrealba
 
 ---
 
@@ -33,11 +33,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Si eliminas un registro en la tabla padre todas las preguntas relacionadas con ese modulo en la tabla pregunta se eliminaran automaticamente. 
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:* Ambos campos deben tener el mismo tipo de dato para que el motor de la base de datos pueda compararlos y validar que la relacion entre la llave primaria y la foranea sea exacta y eficiente
 
 
 
@@ -62,11 +62,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Si la ventana se abre sin errores de codigo pero no muestra datos, significa que la conexion probablemente funciona, El problema suele estar en la consulta sql. Es probable que el id que se esta pasando a la consulta no coincida en la base de datoso que la sintaxis de la consulta este filtrando incorrectamente los datos
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
+* *R:* Al usar una variable private, garantizamos que el id no sea modificado accidentalmente por otras partes del programa una vez que la ventana haya sido creada. Recibirlo mediante el constructor asegura que el objeto nazca con los datos necesarios para funcionar. 
 
 
 
