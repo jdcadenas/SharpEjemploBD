@@ -9,17 +9,23 @@ namespace ejemploBd
 	public partial class GestionPreguntas : Form
 	{
 		// EXAMEN PASO 5.1: Esta cadena debe estar vacía. Cópiala de MainForm.cs
-		private string cadenaConexion = ""; 
+		private string cadenaConexion = "Server=localhost;Database=peducativa;Uid=root;Pwd=;"; 
 		private int _idModulo;
+		
+		
 
 		// EXAMEN PASO 5.2: El constructor debe recibir el ID y el Nombre del módulo
-		public GestionPreguntas( _______ _____ ,____ _____ )
+		public GestionPreguntas(int idRecibido )
+			
+			
 		{
 			InitializeComponent();
 			// El estudiante debe añadir los parámetros y asignar los valores aquí
 			
+			this._idModulo = idRecibido;
 			//
 			//lamar a funcion 
+			CargarPreguntas();
 		}
 
 		private void CargarPreguntas()
