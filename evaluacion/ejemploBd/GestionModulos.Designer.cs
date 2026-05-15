@@ -1,4 +1,4 @@
-namespace ejemploBd
+﻿namespace ejemploBd
 {
 	partial class GestionModulos
 	{
@@ -26,6 +26,7 @@ namespace ejemploBd
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.btnVpreguntas = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvModulos)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -63,19 +64,34 @@ namespace ejemploBd
 			// 
 			// label1
 			// 
-			this.label1.Text = "Nombre (ES):";
 			this.label1.Location = new System.Drawing.Point(12, 183);
+			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(92, 23);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Nombre (ES):";
 			// 
 			// label2
 			// 
-			this.label2.Text = "Name (EN):";
 			this.label2.Location = new System.Drawing.Point(12, 213);
+			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(92, 23);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Name (EN):";
+			// 
+			// btnVpreguntas
+			// 
+			this.btnVpreguntas.Location = new System.Drawing.Point(205, 240);
+			this.btnVpreguntas.Name = "btnVpreguntas";
+			this.btnVpreguntas.Size = new System.Drawing.Size(75, 23);
+			this.btnVpreguntas.TabIndex = 4;
+			this.btnVpreguntas.Text = "Ver preguntas";
+			this.btnVpreguntas.UseVisualStyleBackColor = true;
+			this.btnVpreguntas.Click += new System.EventHandler(this.BtnVpreguntasClick);
 			// 
 			// GestionModulos
 			// 
 			this.ClientSize = new System.Drawing.Size(384, 281);
+			this.Controls.Add(this.btnVpreguntas);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnGuardar);
@@ -88,5 +104,6 @@ namespace ejemploBd
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnVpreguntas;
 	}
 }
