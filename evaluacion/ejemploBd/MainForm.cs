@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Created by SharpDevelop.
  * User: jdcad
  * Date: 3/5/2026
@@ -92,6 +92,11 @@ namespace ejemploBd
 			// EXAMEN: Abrir el formulario de Gestión de Módulos
 			GestionModulos frm = new GestionModulos();
 			frm.ShowDialog();
+		}
+		
+		void DgvUsuariosCellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+			
 		}
 	}
 }

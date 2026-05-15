@@ -56,6 +56,7 @@ namespace ejemploBd
 			this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvUsuarios.Size = new System.Drawing.Size(501, 189);
 			this.dgvUsuarios.TabIndex = 0;
+			this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvUsuariosCellContentClick);
 			// 
 			// btnAgregarUsuario
 			// 
@@ -87,14 +88,6 @@ namespace ejemploBd
 			this.btnActualizarUsuario.UseVisualStyleBackColor = true;
 			this.btnActualizarUsuario.Click += new System.EventHandler(this.BtnAcualizarUsuarioClick);
 			// 
-			// lblEstado
-			// 
-			this.lblEstado.Location = new System.Drawing.Point(234, 339);
-			this.lblEstado.Name = "lblEstado";
-			this.lblEstado.Size = new System.Drawing.Size(100, 23);
-			this.lblEstado.TabIndex = 4;
-			this.lblEstado.Text = "Estado";
-			// 
 			// btnGestionModulos
 			// 
 			this.btnGestionModulos.Location = new System.Drawing.Point(544, 285);
@@ -104,6 +97,14 @@ namespace ejemploBd
 			this.btnGestionModulos.Text = "Módulos (Proyecto)";
 			this.btnGestionModulos.UseVisualStyleBackColor = true;
 			this.btnGestionModulos.Click += new System.EventHandler(this.BtnGestionModulosClick);
+			// 
+			// lblEstado
+			// 
+			this.lblEstado.Location = new System.Drawing.Point(234, 339);
+			this.lblEstado.Name = "lblEstado";
+			this.lblEstado.Size = new System.Drawing.Size(100, 23);
+			this.lblEstado.TabIndex = 4;
+			this.lblEstado.Text = "Estado";
 			// 
 			// MainForm
 			// 
