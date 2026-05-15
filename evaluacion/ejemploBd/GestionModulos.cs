@@ -8,6 +8,8 @@ namespace ejemploBd
 {
 	public partial class GestionModulos : Form
 	{
+		
+		//esta parte fue realizada por jose torrealba
 		// EXAMEN PASO 1: Esta cadena está vacía. Cópiala de MainForm.cs
 		private string cadenaConexion = "Server=localhost;Database=peducativa;Uid=root;Pwd=;"; 
 
