@@ -4,8 +4,8 @@
 
 ### Datos de la Pareja
 
-* **Nombre 1:** ________________________________________
-* **Nombre 2:** ________________________________________
+* **Nombre 1:** Jose Falcon Seccion B
+* **Nombre 2:** Sebastian Aranguren Seccion B
 
 ---
 
@@ -33,11 +33,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 1. **Tablas:** Asegúrese de tener creadas las tablas `modulo` y `pregunta` (ver scripts en `README.md`).
 2. **Datos:** Inserte manualmente en phpMyAdmin los 4 módulos: *Architecture, Anthropology, Calculus, Sports*.
 3. **Análisis de Integridad:** En el script SQL, la relación tiene la instrucción `ON DELETE CASCADE`. ¿Qué sucede con las preguntas asociadas si eliminamos un módulo de la tabla `modulo`?
-* *R:* ________________________________________________
+* *R:* Al eliminar un modulo de la tabla "modulos" todas las preguntas asociadas a ese modulo se borran automaticamente.
 
 
 4. **Tipos de Datos:** ¿Por qué es obligatorio que el campo `id_modulo` (en `pregunta`) tenga el mismo tipo de dato que el `id` (en `modulo`) para que la relación funcione?
-* *R:* ________________________________________________
+* *R:*La relacion de los tipos de datos entre la clave primaria y la clave foranea es obligatorio para que la base de datos tenga la relacion logica entre modulos y preguntas se mantenga sin inconsistencias
 
 
 
@@ -62,11 +62,11 @@ Su examen consiste en completar la **Gestión de Módulos y Preguntas** dentro d
 ### FASE 4: Preguntas Teóricas
 
 1. **Lógica:** Si al abrir la ventana de preguntas estas aparecen vacías para todos los módulos (pero no hay errores de código), ¿qué objeto revisaría primero: la `Conexion` o la consulta `SQL`? Justifique.
-* *R:* ________________________________________________
+* *R:* Revisaria primero la consulta SQL porque si no hay errores de codigo, la conexion a la base de datos esta funcionando
 
 
 2. **Encapsulamiento:** ¿Cuál es la ventaja de recibir el ID mediante el **Constructor** y guardarlo en una variable `private`, en lugar de simplemente declarar una variable `public` que cualquiera pueda modificar?
-* *R:* ________________________________________________
+* *R:* Que ese dato solo podra acceder la clase madre mas ninguna otra clase que no sea ella.
 
 
 
